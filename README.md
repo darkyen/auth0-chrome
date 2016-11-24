@@ -130,7 +130,7 @@ Auth0's hosted Lock widget will be displayed in a new window.
 ## Using the Library
 
 
-### Auth0CLient(domain, clientId) 
+### `Auth0CLient(domain, clientId)`
 The Library exposes Auth0Client which extends a generic PKCEClient. 
 
 - `domain` : Your Auth0 Domain, to create one please visit https://auth0.com/
@@ -140,7 +140,7 @@ The Library exposes Auth0Client which extends a generic PKCEClient.
    - In the Allowed Callback URLs Section please add `https://<yourchromeappid>.chromiumapps.org/auth0` as an allowed callback url
    - In the Allowed Origins section please add `chrome-extension://<yourchromeappid>`
    
-### Promise <Object> Auth0Client#authenticate(options, interactive)
+### `Promise <Object> Auth0Client#authenticate(options, interactive)`
 
 This will call the Authentication API, and will render the login ui should userinteraction is required. Upon completion this method will resolve an object which will contain the requested token and meta information related to the authentication process.
 
