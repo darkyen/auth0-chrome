@@ -127,11 +127,11 @@ Auth0's hosted Lock widget will be displayed in a new window.
 
 ![auth0 lock](https://cdn.auth0.com/blog/auth0-chrome-lock.png)
 
-## Using the Authentication Result
+## Using the Library
 
-When a user successfully authenticates, an `access_token` is returned and saved in local storage. This token can be used to retrieve the user's profile at the `/userinfo` endpoint, and can also be used to makes fine-grained access control requests to an API.
+The `.authenticate()` method accepts all the arguments valid for [Auth0's Authentication API](https://auth0.com/) except for `redirect_uri`, `response_type`, `code_challenge` & `code_challenge_method` as these are controlld by the library. It returns a promise which will resolve with an object containing the `access_token`, `refresh_token`, `state` and other parameters related to the authentication flow. 
 
-For more information on using access tokens, see the [full documentation](https://auth0.com/docs/api-auth).
+The `access_token` can then be used to make authenticated calls to your API. For more information on using access tokens, see the [full documentation](https://auth0.com/docs/api-auth).
 
 ## Contributing
 
