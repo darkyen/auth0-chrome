@@ -125,7 +125,7 @@ chrome.runtime.onMessage.addListener(function (event) {
 
 Auth0's hosted Lock widget will be displayed in a new window.
 
-![](https://cdn.auth0.com/blog/auth0-chrome-lock.png)
+![auth0 lock](https://cdn.auth0.com/blog/auth0-chrome-lock.png)
 
 ## Using the Authentication Result
 
